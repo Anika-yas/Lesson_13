@@ -20,7 +20,7 @@ body{
     position: relative;
     width: 300px;
     height: 600px;
-    animation: tractor-anim  15s ease 0s 1 forwards;
+    animation: tractor-anim  7s ease 0s 1 forwards;
 }
 
 @keyframes tractor-anim {
@@ -552,7 +552,7 @@ body{
     top: 200px;
     left: -50px;
     z-index: 4;
-    animation: tractor-wheel 15s ease 0s 1 forwards;
+    animation: tractor-wheel 7s ease 0s 1 forwards;
 }
 @keyframes tractor-wheel {
     0%{
@@ -571,7 +571,7 @@ body{
     top: 170px;
     left: 10px;
     z-index: 1;
-    animation: tractor-wheel 15s ease 0s 1 forwards;
+    animation: tractor-wheel 7s ease 0s 1 forwards;
 
 }
 
@@ -579,7 +579,7 @@ body{
     transform: scale(0.7);
     top: 200px;
     left: 200px;
-    animation: tractor-wheel-s 15s ease 0s 1 forwards;
+    animation: tractor-wheel-s 7s ease 0s 1 forwards;
 }
 @keyframes tractor-wheel-s {
     0%{
@@ -596,7 +596,7 @@ body{
     top: 180px;
     left: 250px;
     z-index: 1;
-    animation: tractor-wheel-s 15s ease 0s 1 forwards;
+    animation: tractor-wheel-s 7s ease 0s 1 forwards;
 
 }
 

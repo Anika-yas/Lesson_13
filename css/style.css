@@ -1,0 +1,716 @@
+@import url(null.css);
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+body{
+    background: rgb(62,255,87);
+    background: linear-gradient(0deg, rgba(62,255,87,1) 0%, rgba(142,244,241,1) 56%);
+}
+.main__container {
+    max-width: 1000px;
+    margin: 0 auto ;
+}
+.main{
+    padding: 300px;
+}
+.blue-tractor {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    animation: tractor-anim  15s ease 0s 1 forwards;
+}
+
+@keyframes tractor-anim {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translateX(800px);
+
+    }
+}
+
+
+
+/* ======================== cabin ======================*/
+.cabin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 300px;
+    transform: rotate(-3deg);
+    z-index: 2;
+}
+
+.cabin__roof {
+    width: 220px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    background-color: rgb(75, 217, 236);
+    transform: rotate(-15deg);
+}
+/* =========  roofe__glare ===========*/
+.roof-glare {
+    width: 230px;
+    height: 80px;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    /* border: 3px solid rgb(75, 236, 88);; */
+    z-index: 10;
+    overflow: hidden;
+}
+.roof-glare__1 {
+    width: 230px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: -6px;
+    background: rgb(173,236,255);
+    background: radial-gradient(circle, rgba(173,236,255,1) 0%, rgba(223,250,255,1) 100%);    
+    /* z-index: 10; */
+    border: 3px solid rgb(89, 102, 133);
+}
+.roof-glare__2 {
+    width: 300px;
+    height: 220px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: -50px;
+    /* z-index: 10; */
+    transform: rotate(-10deg);
+    background-color: rgb(75, 217, 236);;
+}
+.cabin__left{
+    width: 50px;
+    height: 260px;
+    bottom: 0;
+    left: -10px;
+    position: absolute;
+    overflow: hidden;
+}
+.cabin__border {
+    width: 50px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    z-index: 1;
+    border-right: 3px solid rgb(89, 102, 133);
+} 
+.parts-cabin {
+    width: 237px;
+    height: 260px;
+    background-color: rgb(75, 217, 236);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.parts-cabin__stage{
+    position: absolute;
+    bottom: 10px;
+    right: 62px;
+    width: 29px;
+    height: 6px;
+    background-color: rgb(75, 217, 236);
+    box-shadow: inset 1px 1px 3px 1px rgb(89, 102, 133);
+    border: 1px solid rgb(89, 102, 133);
+    z-index: 15;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(-5deg);
+}
+.parts-cabin__stage:nth-child(2){
+    bottom: 25px;
+}
+.parts-cabin__stage:nth-child(3){
+    bottom: 40px;
+}
+.parts-cabin__shadow{
+    width: 70px;
+    height: 310px;
+    position: absolute;
+    top: -60px;
+    right:  -10px;
+    background-color:rgba(57, 152, 165, 0.424) ;
+    z-index: 5;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 15px;
+}
+/* -----------window -------------- */
+.window{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,254,255,1) 100%);    
+    position: absolute;
+    z-index: 10;
+    box-shadow: inset 2px 2px 7px rgb(63, 75, 104);
+    border: 1px solid rgb(63, 75, 104);
+}
+.parts-cabin__window-1 {
+    width: 50px;
+    height: 110px;
+    top: -20px;
+    left: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 20px ;
+    transform: rotate(0deg);
+}
+
+.parts-cabin__window-2 {
+    width: 80px;
+    height: 130px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    top: -40px;
+    left: 90px;
+}
+.parts-cabin__window-3 {
+    width: 50px;
+    height: 120px;
+    top: -35px;
+    left: 190px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 40px ;
+    transform: rotate(-5deg);
+}
+/* -----------door -------------- */
+
+.parts-cabin__door{
+    width: 100px;
+    height: 250px;
+    border-top: 3px solid rgb(89, 102, 133);
+    border-right: 3px solid rgb(89, 102, 133);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 10px ;
+    position: absolute;
+    top: -50px;
+    left: 80px;
+    overflow: hidden;
+    box-shadow: inset 2px 2px 3px rgb(89, 102, 133);
+}
+.parts-cabin__door-3{
+    width: 200px;
+    height: 203px;
+    border-radius: 50%;
+    border: 3px solid rgb(89, 102, 133);
+    position: absolute;
+    bottom: -150px;
+    right: 25px;
+}
+.parts-cabin__door-1{
+    width: 2px;
+    height: 200px;
+    border-left: 3px solid rgb(89, 102, 133);
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+.parts-cabin__door-2{
+    width: 40px;
+    height: 2px;
+    border-bottom: 3px solid rgb(89, 102, 133);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.cabin__right {
+    width: 50px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(75, 217, 236);;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    border-right: 3px solid rgb(89, 102, 133);
+} 
+
+
+/* ===================== engine =======================*/
+
+.engine {
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    overflow: hidden;
+    transform: rotate(-3deg);
+    top: 110px;
+    left: 200px;
+    z-index: 3;
+
+}
+.engine__body {
+    width: 160px;
+    height: 180px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(75, 217, 236);;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 2;
+    border-top: 3px solid rgb(89, 102, 133);
+}
+
+/* ======== bonnet===============*/
+.bonnet {
+    width: 100px;
+    height: 160px;
+    border-radius: 50%;
+    border-bottom-right-radius: 90%;
+    position: absolute;
+    top: 2px;
+    right: -0px;
+    background: rgb(118, 180, 204);
+    z-index: 2;
+    border-right: 3px solid rgb(89, 102, 133);
+    overflow: hidden;
+}
+.bonnet__right{
+    width: 110px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: 5;
+    border-right: 3px solid rgb(89, 102, 133);
+    background-color: rgb(75, 217, 236);
+}
+
+/* ======== gratings ===============*/
+
+.grating{
+    width: 20px;
+    height: 5px;
+    background-color: rgb(89, 102, 133);
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    border-top-right-radius: 80%;
+    border-top-left-radius: 80%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border: 1px solid  rgb(80, 90, 114);
+    box-shadow: none;    
+    transform: rotate(5deg);
+    z-index: 5;
+}
+.grating:nth-child(2){
+    top: 35px;
+    right: 14px;
+    transform: scale(1.2);
+}
+.grating:nth-child(3){
+    top: 50px;
+    right: 14px;
+    transform: scale(1.4, 1.2);
+}
+.grating:nth-child(4){
+    top: 65px;
+    right: 13px;
+    transform: scale(1.6, 1.2);
+}
+.grating:nth-child(5){
+    top: 80px;
+    right: 14px;
+    transform: scale(1.4, 1.2);
+}
+.glare-3:nth-child(6){
+    top: 95px;
+    right: 15px;
+    transform: scale(1.2);
+}
+/* ======================== mouth======================*/
+.mouth {
+    position: absolute;
+    bottom: 50px;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 60%;
+    border-bottom-left-radius: 60%;
+
+    right: 16px;
+    width: 55px;
+    height: 15px;
+    border: 1.5px solid  rgb(80, 90, 114);
+    box-shadow: inset 1px 1px 7px 1px rgb(80, 90, 114);
+    ;
+    background-color: red;
+    z-index: 5;
+    overflow: hidden;
+}
+.mouth__top {
+    position: absolute;
+    top: -3px;
+    left: 15px;
+    width: 30px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: white;
+}
+.mouth__bottom {
+    position: absolute;
+    top: 9px;
+    left: 17px;
+    width: 30px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+/* ======================== eye ======================*/
+
+.eye {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    width: 50px;
+    height: 40px;
+    z-index: 5;
+    transform: rotate(15deg);
+}
+.eye__1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 28px;
+    height: 32px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color:   rgb(34, 57, 58);
+    border: 2px solid rgb(47, 58, 82);
+}
+.eye__2 {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    width: 24px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid rgb(83, 100, 104);
+    box-shadow: inset 1px 0px 3px 1px rgb(157, 190, 197);
+    background-color: white;
+}
+.eye__3 {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    width: 10px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.eye__4 {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.eye-right{
+    position: absolute;
+    top: 145px;
+    left: 365px;
+    z-index: 1;
+}
+
+/* ======== glare ===============*/
+
+.engine__top {
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    z-index: 5;
+    right: 6px;
+    top: 3px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 80px;
+    overflow: hidden;
+
+
+}
+.engine__shadow {
+    width: 400px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: -55px;
+    border: 25px solid rgb(187, 253, 255);
+    transform: rotate(-13deg);
+
+}
+.engine__glare {
+    width: 30px;
+    height: 7px;
+    border-radius: 40%;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 4px 15px 1px rgb(233, 233, 233);    
+    z-index: 5;
+    transform: rotate(-5deg);
+}
+
+
+/* ======================== wheel__beeg ======================*/
+
+.wheel__beeg{
+}
+.cooling-grate {
+    position: absolute;
+    top: 150px;
+    left: 230px;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(25, 96, 98);
+    border: 2px solid rgb(9, 64, 66);
+    box-shadow: inset 1px 1px 5px 2px rgb(9, 64, 66);
+    z-index: 5;
+    transform: skew(-10deg, -10deg);
+    border-radius: 10px;
+}
+.trumpet {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    width: 10px;
+    height: 180px;
+    background: rgb(166,100,34);
+    background: linear-gradient(90deg, rgba(166,100,34,1) 14%, rgba(231,162,71,1) 84%);   
+    border: 1px solid rgb(129, 74, 2); 
+    box-shadow: inset 1px 1px 5px 2px rgba(129, 74, 2, 0.459);
+    transform: rotate(-10deg);
+}
+.trumpet__1 {
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    width: 20px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(166,100,34);
+    background: linear-gradient(90deg, rgba(166,100,34,1) 14%, rgba(231,162,71,1) 84%);    
+    transform: skew(0deg, 0deg);
+
+}
+.trumpet__2 {
+    position: absolute;
+    bottom: 35px;
+    right: -12px;
+    height: 0;
+    width: 34px;
+    border-bottom: 100px solid rgb(166,100,34);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.trumpet__3 {
+    position: absolute;
+    bottom: 60px;
+    right: -4px;
+    width: 3px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: rotate(-5deg);
+    box-shadow: 1px 1px 5px 3px rgba(255, 255, 255, 0.459);
+}
+
+.wheel {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 200px;
+    left: -50px;
+    z-index: 4;
+    animation: tractor-wheel 15s ease 0s 1 forwards;
+}
+@keyframes tractor-wheel {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.wheel__beeg-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    z-index: 1;
+    animation: tractor-wheel 15s ease 0s 1 forwards;
+
+}
+
+.wheel__small-1{
+    transform: scale(0.7);
+    top: 200px;
+    left: 200px;
+    animation: tractor-wheel-s 15s ease 0s 1 forwards;
+}
+@keyframes tractor-wheel-s {
+    0%{
+        transform: translate(0px, 0px) rotate(0deg) scale(0.7);
+    }
+    100%{
+        transform: translate(0px, 0px) rotate(360deg) scale(0.7);
+    }
+}
+
+
+.wheel__small-2{
+    transform: scale(0.7);
+    top: 180px;
+    left: 250px;
+    z-index: 1;
+    animation: tractor-wheel-s 15s ease 0s 1 forwards;
+
+}
+
+.protector{
+    height: 210px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: -5px;
+    left: 90px;
+    transform-origin: center;
+}
+.protector:nth-child(2){
+    transform: rotate(20deg);
+}
+.protector:nth-child(3){
+    transform: rotate(40deg);
+}
+.protector:nth-child(4){
+    transform: rotate(60deg);
+}
+.protector:nth-child(5){
+    transform: rotate(80deg);
+}
+.protector:nth-child(6){
+    transform: rotate(-20deg);
+}
+.protector:nth-child(7){
+    transform: rotate(-40deg);
+}
+.protector:nth-child(8){
+    transform: rotate(-60deg);
+}
+.protector:nth-child(9){
+    transform: rotate(-80deg);
+}
+/* --------glare------------ */
+
+.wheel__glare {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    z-index: 10;
+    overflow: hidden;
+}
+.wheel___glare-1 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color:  rgb(109, 109, 109);
+    position: absolute;
+    top: 0px;
+    left: -10px;
+}
+.wheel___glare-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:  rgb(0, 0, 0);
+    position: absolute;
+    top: 3px;
+    left: -30px;
+} 
+
+/* --------small------------ */
+
+.rim {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(139, 165, 173);
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 6;
+}
+.bolt {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid  rgb(46, 45, 45) ;
+    background-color: rgb(78, 120, 141);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 5;
+    box-shadow: inset 2px -2px 3px rgb(46, 45, 45) ;
+}
+.smallest-bolt{
+    transform: scale(0.6);
+    top: 15px;
+    left: 5px;
+}
+.smallest-bolt:nth-child(2){
+    top: 0px;
+    left: 30px;
+}
+.smallest-bolt:nth-child(3){
+    top: 15px;
+    left: 55px;
+}
+.smallest-bolt:nth-child(4){
+    top: 45px;
+    left: 55px;
+}
+.smallest-bolt:nth-child(5){
+    top: 60px;
+    left: 30px;
+}
+.smallest-bolt:nth-child(6){
+    top: 45px;
+    left: 5px;
+}
+
